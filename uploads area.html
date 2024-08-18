@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF File Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .bg {
+            /* Replace 'your-image-url.jpg' with the path to your image */
+            background-image: url("WEBSITE/THINGS/book-spines-1.jpg");
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            height: 100%; /* Full height */
+            display: flex; /* Use flexbox for centering text */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: rgb(247, 239, 239); /* Text color */
+            text-align: center; /* Center text alignment */
+            position: relative; /* To position overlay */
+            font-family: Arial, sans-serif; /* Font styling */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(179, 64, 19);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #197ab3;
+        }
+
+        .upload input[type="file"] {
+            padding: 10px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .library {
+            margin-top: 20px;
+        }
+
+        .file-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background: #f1f8ff;
+        }
+
+        .file-item a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .file-item a:hover {
+            text-decoration: underline;
+        }
+        .footer{
+            text-size-adjust: 10;
+            color: black;
+            position: center;
+            right: 0;left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+         <h1>PDF File Manager</h1>
+        
+            <div class="section upload">
+                <h2>Upload PDF Files</h2>
+                <form id="uploadForm" action="#" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="pdfFile" accept=".pdf" required>
+                    <input type="submit" value="Upload">
+                </form>
+                <p>Choose a PDF file to upload. (This functionality requires server-side scripting to work.)</p>
+            </div>
+        
+            <div class="section library">
+                <h2>Library</h2>
+                <p>Here are your stored PDF files:</p>
+                 <!-- Example files; replace with your actual files -->
+                <div class="file-item">
+                    <a href="WEBSITE/THINGS/insurance question-1.pdf" target="_blank">File 1.pdf</a>
+                </div>
+                <div class="file-item">
+                    <a href="WEBSITE/THINGS/insurance question.pdf" target="_blank">file.pdf</a>
+                </div>
+                <div class="file-item">
+                     <a href="WEBSITE/THINGS/IR ANSWERS.docx" target="_blank">file.pdf</a>
+                </div>
+                <!-- Add more file links as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&copy;2024&nbsp;&nbsp;designed by ell$*</p>
+</footer>
+</html>
